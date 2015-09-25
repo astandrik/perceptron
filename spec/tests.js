@@ -90,7 +90,7 @@ describe("Perceptron", function() {
 describe("Perceptron", function() {
   it("Random set self check", function() {
      var set = [];
-     var divider = getRandomArbitary(1, 3) >> 0;
+     var divider = 3;
      var num;
      var res;
      var trueResults = [];

@@ -1,25 +1,18 @@
-describe("LinearCombination", function() {
-  it("calculates Linear combination", function() {
-     var N = new neuron();
+function sigma(x) {
+  return (1/(1+Math.exp(-1 * x)));
+}
+
+
+describe("LinComb", function() {
+  it("LinComb calculation", function() {
+     var N = new neuron([1,1,1,1]);
      var a = [1,2,3,4];
-     var b = [1,2,3,4];
      var sum = 0;
-     for(var i = 0; i < a.length; i++) sum += a[i] * b[i];
-     expect(N.sumNet(a,b)).toEqual(sum);
+     for(var i = 0; i < a.length; i++) sum += a[i];
+     expect(N.sumNet(a)).toEqual(sum);
   });
 });
 
-describe("Simple One-neuron Perceptron", function() {
-  it("Shows that perceptron with single neuron returns sum of input", function() {
-     var P = new perceptron(1, 4);
-     var b = [1,2,3,4];
-     var sum = 0;
-     for(var i = 0; i < b.length; i++) sum +=  b[i];
-     var result = P.process(b);
-     result = result[0];
-     expect(result).toEqual((10 > 10) ? 1 : 0);
-  });
-});
 
 
 describe("vectorMultiply", function() {

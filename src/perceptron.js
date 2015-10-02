@@ -92,12 +92,13 @@ function vectorMultiply(v1, v2) {
 function checkVVForNull(vVector){
     var sum = 0;
     vVector.forEach(function(item) {
-        if(sumVector(item)!=0) {
+        if(sumVector(item)!= 0) {
             return false;
         }
     });
     return true;
 }
+
 
 function train(perceptron, trainingSet) {
     var result = [];

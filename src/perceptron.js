@@ -99,6 +99,16 @@ function vectorMultiply(v1, v2) {
   return res;
 }
 
+<<<<<<< HEAD
+function checkVVForNull(vVector){
+    var sum = 0;
+    vVector.forEach(function(item) {
+        if(sumVector(item)!= 0) {
+            return false;
+        }
+    });
+    return true;
+=======
 function checkVVErrFunc(vVector) {
   var sum = 0;
   var flag = true;
@@ -106,7 +116,9 @@ function checkVVErrFunc(vVector) {
       sum += sumVector(item) * sumVector(item);
   });
   return sum;
+>>>>>>> 52ba052b822acbdcf0e57cc153709aef99c65577
 }
+
 
 function train(perceptron, trainingSet) {
   trainingSet.forEach(function(set) {

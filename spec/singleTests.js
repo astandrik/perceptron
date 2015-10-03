@@ -28,7 +28,7 @@ describe("Perceptron", function() {
      var res;
      var trueResults = [];
      var tests = [];
-     var numTests = 50;
+     var numTests = 500;
      for(var i = 0; i < numTests; i++) {
         num = getRandomArbitary(1, 100) >> 0;
         res = (num % divider) === 0;

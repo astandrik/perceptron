@@ -8,9 +8,6 @@ var neuron = function(vector) {
   this.sumNet = function(vector) {
     var sum = 0;
     var self = this;
-    if(!vector) {
-      debugger;
-    }
     vector.forEach(function(item, i) {
       sum += item * (self.distributionVector)[i];
     });
